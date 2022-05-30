@@ -1,5 +1,5 @@
 # Haysqueeze
-🍟 Configuration manipulation library for EPs.
+🍟 Configuration manipulation library for EPs and mixnets.
 
 Haysqueeze is developed on *nix. If you are using Windows for development, do not bring any Windows-specific files into the repository.
 
