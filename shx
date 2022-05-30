@@ -1,0 +1,12 @@
+#!/bin/bash
+args=( "$@" )
+if [ -e "sh/$1.sh" ] ; then
+	export PATH=$PATH:./sh/
+	bash "sh/$1.sh" "${args[@]:1}"
+elif [ -e "sh/$1" ] ; then
+	export PATH=$PATH:./sh/
+	bash "sh/$1" "${args[@]:1}"
+else
+	echo "No script found as \"$1.sh\". Command: \"${args[@]:1}\"".
+fi
+exit
