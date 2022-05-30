@@ -33,11 +33,12 @@ let V2RayDnsHosts = class {
 let V2RayDnsServers = class extends Array {
 	constructor(conf) {
 		super();
+		let upThis = this;
 		if (conf?.length) {
 			conf.forEach(function (e) {
 				switch (e.constructor) {
 					case String: {
-						this.push(e);
+						upThis.push(e);
 						break;
 					};
 					default: {
