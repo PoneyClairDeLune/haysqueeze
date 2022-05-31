@@ -45,12 +45,8 @@ let V2RayDnsServerObject = class {
 		this.address = conf?.address || this.address;
 		this.clientIp = conf?.clientIp;
 		this.skipFallback = conf?.skipFallback || this.skipFallback;
-		if (conf?.domains) {
-			this.domains = new V2RayListDomains(conf.domains);
-		};
-		if (conf?.expectIPs) {
-			this.expectIPs = new V2RayListIPs(conf.expectIPs);
-		};
+		this.domains = new V2RayListDomains(conf.domains);
+		this.expectIPs = new V2RayListIPs(conf.expectIPs);
 	};
 };
 let V2RayDnsServers = class extends Array {
@@ -78,12 +74,8 @@ let V2RayDnsObjectV4 = class {
 	disableCache = false;
 	disableFallback = false;
 	constructor(conf) {
-		if (conf?.hosts) {
-			this.hosts = new V2RayDnsHosts(conf.hosts);
-		};
-		if (conf?.servers) {
-			this.servers = new V2RayDnsServers(conf.servers);
-		};
+		this.hosts = new V2RayDnsHosts(conf?.hosts);
+		this.servers = new V2RayDnsServers(conf?.servers);
 		this.clientIp = conf?.clientIp;
 		this.queryStrategy = conf?.queryStrategy || this.queryStrategy;
 		this.disableCache = conf?.disableCache || this.disableCache;
