@@ -10,7 +10,7 @@ Haysqueeze is developed on *nix. If you are using Windows for development, do no
     - [ ] JSONv4.
     - [ ] JSONv5.
   - [x] Customizing logging.
-  - [ ] Customizing DNS.
+  - [x] Customizing DNS.
     - [ ] Support for FakeDNS.
   - [ ] Support for inbound/outbound manipulation.
     - [ ] Root object.
