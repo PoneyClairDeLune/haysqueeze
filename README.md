@@ -7,7 +7,7 @@ Haysqueeze is developed on *nix. If you are using Windows for development, do no
 - [ ] No Node.js required, and Deno is optional.
 - [ ] Support for [V2Ray](https://github.com/v2fly/v2ray-core) configuration formats.
   - [ ] Support for multiple formats.
-    - [ ] JSONv4.
+    - [x] JSONv4.
     - [ ] JSONv5.
   - [x] Customizing logging.
   - [x] Customizing DNS.
@@ -35,7 +35,7 @@ Haysqueeze is developed on *nix. If you are using Windows for development, do no
       - [ ] `quic`
       - [ ] `tcp`
       - [ ] `ws`
-  - [ ] Customizing routing.
+  - [x] Customizing routing.
 - [ ] Support for manipulating I2Pd configurations.
   - [ ] Main configuration (`i2pd.conf`).
   - [ ] Custom tunnels (`tunnels.conf` and `tunnels.conf.d/*.conf`)
