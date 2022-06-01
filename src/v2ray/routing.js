@@ -11,11 +11,12 @@ let V2RayRoutingRule = class {
 	network = "tcp,udp";
 	constructor(conf) {
 		this.domainMatcher = conf?.domainMatcher || this.domainMatcher;
-		this.domains = new V2RayListDomains(conf?.domains);
+		this.domain = new V2RayListDomains(conf?.domain);
 		this.ip = new V2RayListIPs(conf?.ip);
 		this.port = conf?.port;
 		this.source = new V2RayListIPs(conf?.source);
 		this.sourcePort = conf?.sourcePort;
+		this.network = conf?.network;
 		this.user = new V2RayListCombined(conf?.user);
 		this.inboundTag = new V2RayListCombined(conf?.inboundTag);
 		this.protocol = new V2RayListCombined(conf?.protocol);
